@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>ROMCON INDUSTRIES</title>
+<style>
+    
+    /*
+    #67f494
+    #404040
+    #000000
+    #000001
+    #1a2b42
+    */
+
+
+    /* ENTIRE BODY */
+    body {margin: 0; padding: 0; background-color: #F0F5F8;}
+    body p { font-size: 1.2vw; }
+    body h3 { font-size: 1.75vw; }
+    body h2 { font-size: 2vw; }
+    body h1 { font-size: 2.15vw; }
+
+    @media (max-width: 768px)
+    {
+        body {margin: 0% -10%; padding: 0% -10%;}
+    }
+
+
+    /* TOP TITLE */
+    .topTitle { background-color:#000000; color: white; text-align: center; padding: 1.25%; }
+
+    /* TOP NAVIGATION */
+    .topNavigation { overflow: hidden; background-color: white; padding: 0.75vw 0.5vw; text-align: center; }
+    .topNavigation a { text-align: center; color: #000001; text-decoration: none; padding: 14px 1vw; font-size: 1.2vw; }
+    .topNavigation a:hover { text-decoration: underline;}
+    .topNavigation a.Accountability { background-color: #B82132; color: white; }
+
+    /* DROP DOWN NAVIGATION */
+    .dropDown { display: inline-block; }
+    .dropDown-content { display: none; position: absolute; background-color: #f1f1f1; margin-top: 10px; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+    .dropDown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+    .dropDown-content a:hover {background-color: #ddd;}
+    .dropDown:hover .dropDown-content {display: block;}
+    .dropDown:hover .topLink {text-decoration: underline;}
+
+    /* TOP NEWS */
+    .topNews { background-color:#000000; color: white; text-align: center; margin: 0% 10%; padding: 10px; }
+
+    /* AI SECTION */
+    .aiSection { margin: 0% 10%; padding: 1% 0px 1% 0px; }
+    .aiSection table { border-collapse: collapse; border-style: hidden; vertical-align: top }
+    .aiSection td { border: 20px solid #F0F5F8; }
+
+    /* Document Section */
+    .documents { background-color: white; color: #000001; padding: 0px 20px;}
+    .documents a { text-decoration: none; color: #000001; }
+    .documents a:hover { text-decoration: underline; }
+
+    /* Folder Section */
+    .folders a { text-decoration: none; color: #000001; }
+    .folders a:hover { text-decoration: underline; }
+    .folders h2 { display: inline; padding: 10px; }
+
+    /* Resource Section */
+    .resources { margin: 0% 10%; }
+    .resources table { border-collapse: collapse; border-style: hidden; border-spacing: 10px; }
+    .resources td { background-color: white; color: #000001; border: 20px solid #F0F5F8; text-align: center; padding: 15px 15px;}
+    .resources a { text-decoration: none; color: #000001; }
+
+    /* Portrait Section */
+    .portraits { background-color: #bfbfbf; padding: 2% 2% 1.5% 0px; font-size: 1.2vw; }
+    .portraits table { margin: 0% 10% 0% 11.5%; text-align: center;}
+    .portraits td { width: 12.5%; padding: 0% 2%; }
+    .portraits img {width: 100%;}
+    .portraits img:hover { transform:scale(1.1); }
+
+
+    /* ------------------------------------------- Update Slide ------------------------------------------- */
+
+.updateslide	{table-layout: fixed;
+		width: 100%;
+		background-color: #400040;
+		color: white;
+		font-size: 2.25vh;}
+
+.updateslidetable	{table-layout: fixed;
+			width: 100%;}
+
+.updateslidetable td	{padding: 0px 10px;
+			width: 33%;
+			vertical-align: top;}
+
+#slide	{width:100%;}	
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+
+.slideshow-container	{padding: 10px 10px;
+			width: 100%;}
+
+/* Slideshow Dots/Indicators */
+.slidedot	{cursor: pointer;
+		height: 13px;
+		width: 13px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;}
+
+/* Slideshow Active Dots/Indicators */
+.active, .dot:hover	{background-color: #717171;}
+
+/* Slideshow Animation */
+.fade	{-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;}
+        
+@-webkit-keyframes fade	{from {opacity: .4}	to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4}	to {opacity: 1}}
+
+/* On Smaller Screens, Decrease Text Size */
+@media only screen and (max-width: 300px)	{.text {font-size: 11px}}
+
+
+
+</style>
+</head>
+<body>
+
+    <navigation>
+
+        <!-- TOP TITLE -->
+        <div class="topTitle">
+            <a href="index.html" style="text-decoration: none; color: white;"><h1>ROMCON INDUSTRIES</h1></a>
+        </div>
+    
+        <!-- TOP NAVIGATION -->
+        <div class="topNavigation">
+        
+            <a href="index.html">HOME</a>
+    
+            <div class="dropDown">
+                <a class="topLink" href="WebsiteCustomDesign.html">WEBSITE DESIGN</a>
+                <div class="dropDown-content">
+                    <a href="WebsiteCustomDesign.html">Design Your Website</a>
+                    <a href="WebsiteExampleDesigns.html">Example Websites</a>
+                </div>
+            </div>
+    
+            <div class="dropDown">
+                <a class="topLink" href="3DCustomPrint.html">3D PRINTING & DESIGN</a>
+                <div class="dropDown-content">
+                    <a href="3DCustomPrint.html">Custom Print</a>
+                    <a href="3DCustomDesign.html">Custom Design</a>
+                    <a href="3DDesignGallery.html">Design Gallery</a>
+                </div>
+            </div>
+    
+            <a href="AboutUs.html">ABOUT US</a>
+        </div>
+    
+    </navigation>
+
+<article>
+    
+    <p></p>
+    
+
+    <!-- RESOURCES -->
+    <div class="resources">
+        <table>
+            <tr>
+                <td rowspan="2" style="background-color: #F0F5F8;">
+                    <h1>Custom 3D Printing</h1>
+                    <hr>
+                    <p>RomCon Industries prides itself on our 3D printing technology and skills. If you would like something 3D printed, and already have a 3D file, please download the "3D Print Quote Form".</p> 
+                    <p>Then email the quote form along with the STL or GCODE file, if you have the files, to Conor.X.Rom@gmail.com with the label Custom 3D Print - "Your Name". Check out the example email below. If you don't have the STL or GCODE file, don't worry, as long as the link to the website holding the file is filled out on the quote form. Also check out our <a href="3DCustomDesign.html" style="text-decoration: underline;">Custom 3D Design</a> page, if you cannot find what you want printed and we could possible design it.</p>
+                    <p>We will reply to your email sometime in the next 24 hours, with a quote from us, or further questions.</p>
+
+                    <iframe src=
+                        "3DPrintQuoteForm.pdf"
+                        width="800"
+                        height="685">
+                    </iframe>
+                </td>
+                <td style="width: 50%;"><img src="PrinterEnder3.jpg" style="width: 75%;"><h2>Ender 3D</h2><p>A filament based printer. Great for protyping 3D designs, printing larger designs, and creating durable prints, at a more cost effective price.</p></td>
+            </tr>
+            <tr>
+                <td style="width: 50%;"><img src="PrinterResin.jpg" style="width: 75%;"><h2>Resin (Coming Soon)</h2><p>A resin based printer. Designed for smaller 3D designs, provides more detailed prints; great for miniatures, but at a higher price.</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <p></p>
+
+
+    <!-- Licenses-->
+    <div class="resources">
+        <table>
+            <tr>
+                <td style="vertical-align: top;">
+                    <h1>Example Email</h1>
+                    <img src="EmailExample.png" style="border: 1px solid #000000;">  
+                </td>
+
+                <td style="vertical-align: top;">
+                    <h1>What Is Copyright?</h1>
+                    <p>Copyright is a type of intellectual property that protects original works; allowing the owner the exclusive right to copy, distribute, adapt, display, and/or perform a creative work. Currently, these protections last the life of the creator plus 70 years.</p>
+
+                    <p>RomCon Industries is only able to 3D print files that the author has given their Copyright somewhat to the public, or given us a private license to use them. Any 3D file licensed under Non-Commercial Creative Commons or is dedicated to the Public Domain we can print. If you cannot find exactly what you want, check out our <a href="3DCustomDesign.html" style="text-decoration: underline;">Custom 3D Design</a> page.</p>
+                
+                    <table>
+                        <tr>
+                            <td style="width: 50%; padding: 0px;">
+                                <a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=rich"  target="_blank"><img src="LicensePublicDomain.png" style="width: 100%;"></a>
+                                <p></p>
+                                <a href="https://creativecommons.org/licenses/by-sa/3.0/"  target="_blank"><img src="LicenseShareAlike.png" style="width: 100%;"></a>
+                            </td>
+                            <td style="width: 50%; padding: 0px;">
+                                <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=ccsearch&atype=rich"  target="_blank"><img src="LicenseAttribution.png" style="width: 100%;"></a>
+                                <p></p>
+                                <a href="https://creativecommons.org/licenses/by/4.0/"  target="_blank"><img src="LicenseNoDerivatives.png" style="width: 100%;"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </div>
+    
+    <p></p>
+
+    
+
+
+</article>
+
+<!-- FOOTER -->
+<footer>
+    <div style="background-color: #000000;">
+        <table style="width: 100%; ">
+            <tr>
+                <td style="vertical-align: top; padding: 0px 20px 0px 20px; color: white; text-align: center;">
+                    <a href="index.html" style="text-decoration: none; color: white;"><h3>ROMCON INDUSTRIES</h3></a>
+                    <p><a style="text-decoration: none; color: white;" href="mailto:conor.x.rom@gmail.com">Conor.X.Rom@gmail.com</a> | Copyright @2023 | All Rights Reserved | Website Programmed By Conor Rom </p>
+                </td>
+            </tr>        
+        </table>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
